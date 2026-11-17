@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changing Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="text-box" id="textBox" contenteditable="true">
+            i am Sahil Verma
+        </div>
+
+        <button onclick="applyChanges()">Button</button>
+
+        <div class="options">
+
+            <div class="option">
+                <div class="colors">
+                    <span style="background:red" onclick="setBg('red')"></span>
+                    <span style="background:blue" onclick="setBg('blue')"></span>
+                    <span style="background:green" onclick="setBg('green')"></span>
+                    <span style="background:yellow" onclick="setBg('yellow')"></span>
+                    <span style="background:pink" onclick="setBg('pink')"></span>
+                    <span style="background:gray" onclick="setBg('gray')"></span>
+                </div>
+                <h3>Background Color Option</h3>
+            </div>
+
+            <div class="option">
+                <div class="colors">
+                    <span style="background:black" onclick="setFontColor('black')"></span>
+                    <span style="background:red" onclick="setFontColor('red')"></span>
+                    <span style="background:blue" onclick="setFontColor('blue')"></span>
+                    <span style="background:green" onclick="setFontColor('green')"></span>
+                    <span style="background:purple" onclick="setFontColor('purple')"></span>
+                    <span style="background:orange" onclick="setFontColor('orange')"></span>
+                    <span style="background: grey;" onclick="setFontColor('grey')"></span>
+                    <span style="background: olive;" onclick="setFontColor('olive')"></span>
+                </div>
+                <h3>Font Color Option</h3>
+            </div>
+
+            <div class="font-option">
+                <select id="fontFamily">
+                    <option value="Verdana">Verdana</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select>
+
+                <h3>Font Family Option</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
